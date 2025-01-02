@@ -26,6 +26,7 @@ app.get("/projects", (req, res) => {
     }
   });
 });
+
 app.get("/profile_image", (req, res) => {
   res.json(profileImageSources);
 });
