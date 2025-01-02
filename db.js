@@ -11,13 +11,13 @@ const database = process.env.DB_DATABASE;
 const password = process.env.DB_PASS;
 const port = process.env.DB_PORT;
 
-const pool = new Pool({
-  user: user,
-  host: host,
-  database: database,
-  password: password,
-  port: port,
-});
+// const pool = new Pool({
+//   user: user,
+//   host: host,
+//   database: database,
+//   password: password,
+//   port: port,
+// });
 
 export const profileImageSources = [
   "./assets/images/Profile/carlston_1.png",
@@ -27,3 +27,12 @@ export const profileImageSources = [
 ];
 
 export default pool;
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // For Render's SSL requirements
+  },
+});
+
+module.exports = pool;
