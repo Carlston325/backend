@@ -1,6 +1,8 @@
 import pg from "pg";
-const { Pool } = pg;
 import dotenv from "dotenv";
+
+const { Pool } = pg;
+
 dotenv.config();
 
 const user = process.env.DB_USER;
