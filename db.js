@@ -1,7 +1,7 @@
-import pg from "pg";
+// import pg from "pg";
 import dotenv from "dotenv";
 
-const { Pool } = pg;
+// const { Pool } = pg;
 
 dotenv.config();
 
@@ -27,6 +27,8 @@ export const profileImageSources = [
 ];
 
 export default pool;
+
+const { Pool } = require("pg");
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
