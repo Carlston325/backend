@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
+app.get("/profile_images", (req, res) => {
+  res.json(profileImageSources);
+});
+
 app.get("/projects", (req, res) => {
   pool.query("SELECT * FROM web_dev_projects_info", (error, result) => {
     if (error) {
@@ -29,10 +33,6 @@ app.get("/projects", (req, res) => {
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send("Something went wrong!");
-});
-
-app.get("/profile_images", (req, res) => {
-  res.json(profileImageSources);
 });
 
 app.listen(port, () => {

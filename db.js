@@ -22,6 +22,9 @@ const pool = new Pool({
   ssl: {
     rejectUnauthorized: false, // For Render's SSL requirements
   },
+  max: 10,
+  idleTimeoutMillis: 30000, 
+  connectionTimeoutMillis: 2000,
 });
 
 export default pool;
