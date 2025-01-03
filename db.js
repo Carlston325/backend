@@ -17,6 +17,15 @@ const database = process.env.DB_DATABASE;
 const password = process.env.DB_PASS;
 const port = process.env.DB_PORT;
 
+const pool = new Pool({
+  connectionString: `postgresql://${user}:${password}@${host}.frankfurt-postgres.render.com/${database}`,
+  ssl: {
+    rejectUnauthorized: false, // For Render's SSL requirements
+  },
+});
+
+export default pool;
+
 // const pool = new Pool({
 //   user: user,
 //   host: host,
@@ -24,13 +33,3 @@ const port = process.env.DB_PORT;
 //   password: password,
 //   port: port,
 // });
-
-const pool = new Pool({
-  connectionString: `postgres://${user}:${password}@${host}:${port}/${database}`,
-  ssl: {
-    rejectUnauthorized: false, // For Render's SSL requirements
-  },
-});
-
-// module.exports = pool;
-export default pool;
