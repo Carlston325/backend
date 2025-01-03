@@ -16,17 +16,17 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
-app.get("/profile_images", (req, res) => {
-  res.json(profileImageSources);
-});
-
 app.get("/projects", (req, res) => {
   pool.query("SELECT * FROM web_dev_projects_info", (error, result) => {
     if (error) {
       console.error("Database query error:", error);
       res.status(500).json({ error: "Internal Server Error" });
     } else {
-      res.json(result.rows);
+      const data = {
+        profileImageSources,
+        projects: [...result.rows],
+      };
+      res.json(data);
     }
   });
 });
