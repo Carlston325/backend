@@ -1,7 +1,7 @@
 import express from "express";
 import pool from "./db.js";
 import cors from "cors";
-import { profileImageSources } from "./db.js";
+import { profileImageSources, projects } from "./db.js";
 import dotenv from "dotenv";
 
 dotenv.config();

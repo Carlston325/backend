@@ -120,7 +120,7 @@ const password = process.env.DB_PASS;
 const port = process.env.DB_PORT;
 
 const pool = new Pool({
-  connectionString: `postgresql://carlstons_db_user:LR3QAnBuKNn34p3Is7bq0NWLuvl8wqo3@dpg-ctrdnmlds78s73dkv43g-a.frankfurt-postgres.render.com/carlstons_db`,
+  connectionString: `postgresql://${user}:${password}@${host}.frankfurt-postgres.render.com/${database}`,
   ssl: {
     rejectUnauthorized: false, // For Render's SSL requirements
   },
