@@ -1,9 +1,15 @@
-// import pg from "pg";
-import dotenv from "dotenv";
+export const profileImageSources = [
+  "./assets/images/Profile/carlston_1.png",
+  "./assets/images/Profile/carlston_2.png",
+  "./assets/images/Profile/carlston_3.png",
+  "./assets/images/Profile/carlston_4.png",
+];
 
-// const { Pool } = pg;
+import dotenv from "dotenv";
+import pg from "pg";
 
 dotenv.config();
+const { Pool } = pg;
 
 const user = process.env.DB_USER;
 const host = process.env.DB_HOST;
@@ -19,22 +25,12 @@ const port = process.env.DB_PORT;
 //   port: port,
 // });
 
-export const profileImageSources = [
-  "./assets/images/Profile/carlston_1.png",
-  "./assets/images/Profile/carlston_2.png",
-  "./assets/images/Profile/carlston_3.png",
-  "./assets/images/Profile/carlston_4.png",
-];
-
-export default pool;
-
-const { Pool } = require("pg");
-
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: `postgres://${user}:${password}@${host}:${port}/${database}`,
   ssl: {
     rejectUnauthorized: false, // For Render's SSL requirements
   },
 });
 
-module.exports = pool;
+// module.exports = pool;
+export default pool;
