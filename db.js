@@ -5,7 +5,7 @@ export const profileImageSources = [
   "./assets/images/Profile/carlston_4.png",
 ];
 
-export const manuelProjects = [
+const manuelProjects = [
   {
     id: 1,
     title: "3D Modelling",
@@ -21,7 +21,7 @@ export const manuelProjects = [
     title: "Invite Cards Project",
     descrip:
       "This Project is an invite Cards creation website. I created it to work on my JavaScript skills and knowledge, also learning new things. Like changing the background from an Input Selection and also Uploading your own Images.",
-    thumbnail: "./assets/images/invite_cards_website.png",
+    thumbnail: "./assets/images/invite_cards_website.PNG",
     github_link: "https://github.com/Carlston325/invites",
     website_link: "https://carlston325.github.io/invites/",
     other_link: null,
@@ -107,34 +107,29 @@ export const manuelProjects = [
   },
 ];
 
-import dotenv from "dotenv";
-import pg from "pg";
+export default manuelProjects;
 
-dotenv.config();
-const { Pool } = pg;
+//  CONNTECTING TO POSTGRES DATABASE HOSTED ON RENDER
+// import dotenv from "dotenv";
+// import pg from "pg";
 
-const user = process.env.DB_USER;
-const host = process.env.DB_HOST;
-const database = process.env.DB_DATABASE;
-const password = process.env.DB_PASS;
-const port = process.env.DB_PORT;
+// dotenv.config();
+// const { Pool } = pg;
 
-const pool = new Pool({
-  connectionString: `postgresql://${user}:${password}@${host}.frankfurt-postgres.render.com/${database}`,
-  ssl: {
-    rejectUnauthorized: false, // For Render's SSL requirements
-  },
-  max: 10,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 5000,
-});
-
-export default pool;
+// const user = process.env.DB_USER;
+// const host = process.env.DB_HOST;
+// const database = process.env.DB_DATABASE;
+// const password = process.env.DB_PASS;
+// const port = process.env.DB_PORT;
 
 // const pool = new Pool({
-//   user: user,
-//   host: host,
-//   database: database,
-//   password: password,
-//   port: port,
+//   connectionString: `postgresql://${user}:${password}@${host}.frankfurt-postgres.render.com/${database}`,
+//   ssl: {
+//     rejectUnauthorized: false, // For Render's SSL requirements
+//   },
+//   max: 10,
+//   idleTimeoutMillis: 30000,
+//   connectionTimeoutMillis: 5000,
 // });
+
+// export default pool;
