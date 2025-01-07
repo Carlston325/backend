@@ -18,36 +18,6 @@ const manuelProjects = [
   },
   {
     id: 2,
-    title: "Invite Cards Project",
-    descrip:
-      "This Project is an invite Cards creation website. I created it to work on my JavaScript skills and knowledge, also learning new things. Like changing the background from an Input Selection and also Uploading your own Images.",
-    thumbnail: "./assets/images/invite_cards_website.PNG",
-    github_link: "https://github.com/Carlston325/invites",
-    website_link: "https://carlston325.github.io/invites/",
-    other_link: null,
-  },
-  {
-    id: 3,
-    title: "Top Ten",
-    descrip:
-      "This Project is a website that gives the user the latest information on certain topics. For example, movies. I created this website through simple HTML & CSS.",
-    thumbnail: "./assets/images/top_ten_website.png",
-    github_link: "https://github.com/Carlston325/TopTen",
-    website_link: "https://carlston325.github.io/TopTen/",
-    other_link: null,
-  },
-  {
-    id: 4,
-    title: "Gallery Project",
-    descrip:
-      "This Project is a Gallery page where you can input images & Videos. I created it to work on my jQuery skills and gain new knowledge of JavaScript. For example, inputting videos (& images) onto a webpage and being able to input more than 1 image or video to create a Gallery.",
-    thumbnail: "./assets/images/gallery_website.png",
-    github_link: "https://github.com/Carlston325/gallery",
-    website_link: "https://carlston325.github.io/gallery/",
-    other_link: null,
-  },
-  {
-    id: 5,
     title: "Drone Shop",
     descrip:
       "Built with React.js, this is an eCommerce store that sells drones.",
@@ -57,13 +27,43 @@ const manuelProjects = [
     other_link: null,
   },
   {
-    id: 6,
+    id: 3,
     title: "JavaCoats Project",
     descrip:
       "This is an eCommerce Products Website Project, I created in React.js.",
     thumbnail: "./assets/images/javacoats_web_app.png",
     github_link: "https://github.com/Carlston325/eCommerce",
     website_link: "https://carlston325.github.io/eCommerce/",
+    other_link: null,
+  },
+  {
+    id: 4,
+    title: "Top Ten",
+    descrip:
+      "This Project is a website that gives the user the latest information on certain topics. For example, movies. I created this website through simple HTML & CSS.",
+    thumbnail: "./assets/images/top_ten_website.png",
+    github_link: "https://github.com/Carlston325/TopTen",
+    website_link: "https://carlston325.github.io/TopTen/",
+    other_link: null,
+  },
+  {
+    id: 5,
+    title: "Gallery Project",
+    descrip:
+      "This Project is a Gallery page where you can input images & Videos. I created it to work on my jQuery skills and gain new knowledge of JavaScript. For example, inputting videos (& images) onto a webpage and being able to input more than 1 image or video to create a Gallery.",
+    thumbnail: "./assets/images/gallery_website.png",
+    github_link: "https://github.com/Carlston325/gallery",
+    website_link: "https://carlston325.github.io/gallery/",
+    other_link: null,
+  },
+  {
+    id: 6,
+    title: "The Emporium",
+    descrip:
+      "This is an eCommerce Shop to sell things for men, women & kids, this project was created in React.js.",
+    thumbnail: "./assets/images/the_emporium_web_app.png",
+    github_link: "https://github.com/Carlston325/the_emporium_react",
+    website_link: null,
     other_link: null,
   },
   {
@@ -78,12 +78,12 @@ const manuelProjects = [
   },
   {
     id: 8,
-    title: "The Emporium",
+    title: "Invite Cards Project",
     descrip:
-      "This is an eCommerce Shop to sell things for men, women & kids, this project was created in React.js.",
-    thumbnail: "./assets/images/the_emporium_web_app.png",
-    github_link: "https://github.com/Carlston325/the_emporium_react",
-    website_link: null,
+      "This Project is an invite Cards creation website. I created it to work on my JavaScript skills and knowledge, also learning new things. Like changing the background from an Input Selection and also Uploading your own Images.",
+    thumbnail: "./assets/images/invite_cards_website.PNG",
+    github_link: "https://github.com/Carlston325/invites",
+    website_link: "https://carlston325.github.io/invites/",
     other_link: null,
   },
   {
