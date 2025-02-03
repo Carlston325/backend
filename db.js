@@ -99,7 +99,7 @@ const manuelProjects = [
     id: 10,
     title: "Clara's Kitchen & Co.",
     descrip: "A landing page to showcase dishes that can be orderd by people.",
-    thumbnail: "./assets/images/claras_kitchen_and_co.jpg",
+    thumbnail: "./assets/images/claras_kitchen_and_co.jpeg",
     github_link: "https://github.com/Carlston325/claras-kitchen-co",
     website_link: "https://carlston325.github.io/claras-kitchen-co/",
     other_link: null,
