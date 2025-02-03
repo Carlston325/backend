@@ -97,6 +97,15 @@ const manuelProjects = [
   },
   {
     id: 10,
+    title: "Clara's Kitchen & Co.",
+    descrip: "A landing page to showcase dishes that can be orderd by people.",
+    thumbnail: "./assets/images/claras_kitchen_and_co.jpg",
+    github_link: "https://github.com/Carlston325/claras-kitchen-co",
+    website_link: "https://carlston325.github.io/claras-kitchen-co/",
+    other_link: null,
+  },
+  {
+    id: 11,
     title: "Journey of Results",
     descrip:
       "I worked for Journey of Results Ltd to build their consulting firm website. I was part of a team and my task was to add functionality to the website. I also learnt SEO & some web design through this experience.",
