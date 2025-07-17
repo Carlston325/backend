@@ -104,16 +104,6 @@ const manuelProjects = [
     website_link: "https://carlston325.github.io/claras-kitchen-co/",
     other_link: null,
   },
-  {
-    id: 11,
-    title: "Journey of Results",
-    descrip:
-      "I worked for Journey of Results Ltd to build their consulting firm website. I was part of a team and my task was to add functionality to the website. I also learnt SEO & some web design through this experience.",
-    thumbnail: "./assets/images/jor_website.png",
-    github_link: null,
-    website_link: null,
-    other_link: "https://oli7760.wixstudio.com/journeyofresults",
-  },
 ];
 
 export default manuelProjects;
